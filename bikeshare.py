@@ -40,7 +40,7 @@ def get_filters():
             print('Sorry, {} is not a month in the data'.format(month))
 
     while True:
-        day = input('Input name of the month (all, monday, tuesday, ... sunday). ').lower()
+        day = input('Input name of the weekday (all, monday, tuesday, ... sunday). ').lower()
         if day == 'all' or day in days:
             break
         else:
