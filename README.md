@@ -10,17 +10,9 @@ Bikeshare project
 This project explores data related to bike share systems and provides insightful metrics.
 
 ### Files used
-Data sets of three major cities:
-    chicago.csv
-    wshigton.csv
-    new_york_city.csv
+Data sets of three major cities:chicago.csv, wshigton.csv, new_york_city.csv
 
-Python code:
-    bikeshare.py
+Python code: bikeshare.py
 
 ### Credits
-Most doubts on how to write some of the code were taken from:
-    python documentation
-    panda documentation
-    Numpy documentation
-    stackoverflow.com
+Most doubts on how to write some of the code were taken from: python documentation, panda documentation, Numpy documentation and tackoverflow.com
