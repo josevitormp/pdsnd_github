@@ -23,15 +23,15 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         try:
-            city = input('Input the name of the following cities: chicago, new york city and washington. ').lower()
+            city = input('Input the name of one of the following cities: Chicago, New york city or Washington. ').lower()
             if city in CITY_DATA.keys():
                 break
             else:
                 print('Sorry, {} is not a valid city'.format(city))
-            
+
     # TO DO: get user input for month (all, january, february, ... , june)
         except Exception as e:
-            print("Exception occurred: {}".format(e)) 
+            print("Exception occurred: {}".format(e))
     while True:
         month = input('Input name of the month (all, january, february, ... , june). ').lower()
         if month == 'all' or month in months:
@@ -76,7 +76,7 @@ def load_data(city, month, day):
     if month != 'all':
         # use the index of the months list to get the corresponding int
         month = months.index(month) + 1
-    
+
         # filter by month to create the new dataframe
         df = df[df['month'] == month]
 
@@ -158,7 +158,7 @@ def user_stats(df):
 
     # TO DO: Display counts of user types
     print('The count of user type is: {}'.format(df['User Type'].value_counts()))
-    
+
     # TO DO: Display counts of gender
     if 'Gender' in df.columns:
         print('The count of Gender is: {}'.format(df['Gender'].value_counts()))
@@ -172,8 +172,8 @@ def user_stats(df):
         print('The most common year of birth is: {}'.format(int(df['Birth Year'].value_counts().keys()[0])))
     else:
         print()
-          
-          
+
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -201,7 +201,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        
+
         display_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
