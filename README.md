@@ -15,4 +15,4 @@ Data sets of three major cities:chicago.csv, wshigton.csv, new_york_city.csv
 Python code: bikeshare.py
 
 ### Credits
-Most doubts on how to write some of the code were taken from: python documentation, panda documentation, Numpy documentation and tackoverflow.com
+Most doubts on how to write some of the code were taken from: python documentation, panda documentation, Numpy documentation and stackoverflow.com
