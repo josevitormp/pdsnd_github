@@ -19,4 +19,4 @@ Python code:
     bikeshare.py
 
 ### Credits
-Most doughts on how to write some of the code were taken either from python documentation or stackoverflow.com
+Most doubts on how to write some of the code were taken either from python documentation or stackoverflow.com
